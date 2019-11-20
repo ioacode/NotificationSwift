@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prayer Notification Controller-->
+        <scene sceneID="GdY-OT-w0H">
+            <objects>
+                <viewController storyboardIdentifier="PrayerNotification" id="ewI-rP-oNa" customClass="PrayerNotificationController" customModule="PrayerNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6l-3J-3DR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRAYER NOTIFICATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZz-8i-JMo">
+                                <rect key="frame" x="114" y="74" width="186.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRI-9b-1Yv">
+                                <rect key="frame" x="185.5" y="239" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6to-w2-QVN">
+                                <rect key="frame" x="140.5" y="195" width="133" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-uF-4pH">
+                                <rect key="frame" x="132" y="792" width="150" height="40"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Cu1-G2-ImX"/>
+                                    <constraint firstAttribute="height" constant="40" id="mjs-89-WNr"/>
+                                </constraints>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressStop:" destination="ewI-rP-oNa" eventType="touchUpInside" id="4TM-ki-Yit"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time prayer Notification is Active, Thanks bro !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwb-wT-TZY">
+                                <rect key="frame" x="16" y="284" width="382" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itp-S9-J5K">
+                                <rect key="frame" x="132" y="736" width="150" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="gB8-Ro-XcB"/>
+                                    <constraint firstAttribute="height" constant="40" id="twW-sS-wuz"/>
+                                </constraints>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressStart:" destination="ewI-rP-oNa" eventType="touchUpInside" id="pfN-Mc-TQU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pwb-wT-TZY" firstAttribute="top" secondItem="DRI-9b-1Yv" secondAttribute="bottom" constant="24" id="7QX-Ed-mOO"/>
+                            <constraint firstItem="AOB-YZ-bF6" firstAttribute="trailing" secondItem="pwb-wT-TZY" secondAttribute="trailing" constant="16" id="A3g-3J-TMX"/>
+                            <constraint firstItem="6to-w2-QVN" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="ARo-a8-oGr"/>
+                            <constraint firstItem="itp-S9-J5K" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="N08-pD-GRM"/>
+                            <constraint firstItem="AOB-YZ-bF6" firstAttribute="bottom" secondItem="5HD-uF-4pH" secondAttribute="bottom" constant="30" id="QCa-fu-6eW"/>
+                            <constraint firstItem="bZz-8i-JMo" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="YCK-gV-vnc"/>
+                            <constraint firstItem="5HD-uF-4pH" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="Z4g-PM-1tQ"/>
+                            <constraint firstItem="DRI-9b-1Yv" firstAttribute="top" secondItem="6to-w2-QVN" secondAttribute="bottom" constant="8" id="bIL-ZV-Aer"/>
+                            <constraint firstItem="5HD-uF-4pH" firstAttribute="top" secondItem="itp-S9-J5K" secondAttribute="bottom" constant="16" id="cL8-mB-gja"/>
+                            <constraint firstItem="pwb-wT-TZY" firstAttribute="leading" secondItem="AOB-YZ-bF6" secondAttribute="leading" constant="16" id="ckw-Sy-cq9"/>
+                            <constraint firstItem="6to-w2-QVN" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="dPs-GG-AYq"/>
+                            <constraint firstItem="6to-w2-QVN" firstAttribute="top" secondItem="bZz-8i-JMo" secondAttribute="bottom" constant="100" id="gpl-2m-cFF"/>
+                            <constraint firstItem="5HD-uF-4pH" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="kdR-9J-JVD"/>
+                            <constraint firstItem="bZz-8i-JMo" firstAttribute="top" secondItem="AOB-YZ-bF6" secondAttribute="top" constant="30" id="sRR-LC-9KR"/>
+                            <constraint firstItem="DRI-9b-1Yv" firstAttribute="centerX" secondItem="a6l-3J-3DR" secondAttribute="centerX" id="vIA-tH-vDf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AOB-YZ-bF6"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelKeteranganTime" destination="DRI-9b-1Yv" id="aBd-Mh-ag7"/>
+                        <outlet property="labelTime" destination="6to-w2-QVN" id="Q3H-Dg-vNL"/>
+                        <outlet property="labelTimeNotification" destination="pwb-wT-TZY" id="PUQ-ev-wU6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uH0-UH-KyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="57"/>
+        </scene>
+    </scenes>
+</document>
